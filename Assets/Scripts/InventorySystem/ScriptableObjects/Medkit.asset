@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 145dd4b604778024fafcf46b69b748ac, type: 3}
   m_Name: Medkit
   m_EditorClassIdentifier: Assembly-CSharp::Consumable
-  itemID: 0
+  itemID: 1A
   itemName: Medkit
   itemIcon: {fileID: 0}
   itemtype: 1
+  isStackable: 1
+  maxStackSize: 16

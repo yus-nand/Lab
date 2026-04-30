@@ -1,7 +1,7 @@
 using UnityEngine;
 [CreateAssetMenu(fileName = "Consumable", menuName = "ScriptableObjects/Item/Consumable")]
 
-public class Consumable : Item
+public class Consumable : ItemObject
 {
    void Awake()
     {

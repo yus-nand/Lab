@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df84b26988b1b84485a8c30a70e0fcb, type: 3}
   m_Name: Grenade
   m_EditorClassIdentifier: Assembly-CSharp::Lethal
-  itemID: 2
+  itemID: 1B
   itemName: Grenade
   itemIcon: {fileID: 0}
   itemtype: 2
+  isStackable: 1
+  maxStackSize: 8

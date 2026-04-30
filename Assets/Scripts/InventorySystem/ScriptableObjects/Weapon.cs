@@ -1,7 +1,7 @@
 using UnityEngine;
 [CreateAssetMenu(fileName = "Weapon", menuName = "ScriptableObjects/Item/Weapon")]
 
-public class Weapon : Item
+public class Weapon : ItemObject
 {
     void Awake()
     {

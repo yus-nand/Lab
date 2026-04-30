@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 [CreateAssetMenu(fileName = "Lethal", menuName = "ScriptableObjects/Item/Lethal")]
-public class Lethal : Item
+public class Lethal : ItemObject
 {
     void Awake()
     {

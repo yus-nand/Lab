@@ -3,55 +3,49 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    GameManager gameManager;
-    // public delegate void Attack();
+    public Inventory inventory;
+    public float moveSpeed;
+    public float mouseSensitivity = 2f;
+    public Camera cam;
+    
+    float horizontal, vertical;
+    Vector3 move;
+    float xRotation = 0f;
 
-    public Action UseAttack;
-    public Func<Action, bool> IsMeleeSelected;
-    bool isMelee = false;
-    void Awake()
-    {
-        gameManager = FindAnyObjectByType<GameManager>();
-    }
-    void Start()
-    {   
-        IsMeleeSelected = (UseAttack) => {return UseAttack == UseMelee;};
-        UseAttack = () => {Debug.Log("No Attack Selected");};        //using lambda exp to assign a default
-        // gameManager.OnLMBDown += gameManager.LMBDown;
-    }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Q))
-        {
-            UseAttack = UseMelee;
-            isMelee = IsMeleeSelected(UseAttack);
-        }
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            UseAttack = UseGun;
-            isMelee = IsMeleeSelected(UseAttack);
-        }
-        if(Input.GetMouseButtonDown(0))
-        {
-            UseAttack?.Invoke();
-            Debug.Log("Melee? "+ isMelee);
-        }
-        if(Input.GetMouseButtonDown(1))
-        {
-            gameManager.SetTimer(3f, Explode);
-            Debug.Log("Explosion will occur in 3 seconds!");
-        }
+        Movement();
+        Look();
     }
-    void UseMelee()
+
+    void Movement()
     {
-        Debug.Log("Using Melee Attack");
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
+
+        move = new Vector3(horizontal, 0f, vertical) * moveSpeed * Time.deltaTime;
+        transform.Translate(move);
     }
-    void UseGun()
+
+    void Look()
     {
-        Debug.Log("Using Gun Attack");
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+        transform.Rotate(Vector3.up * mouseX);
+        cam.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
     }
-    void Explode()
+    void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Boom!");
+        if(other.CompareTag("WorlItem"))
+        {
+            WorldItem item = other.transform.GetComponent<WorldItem>();
+            item.Pickup(inventory);
+            Debug.Log($"Picking up {name}");
+            Destroy(other.gameObject);
+        }
     }
 }
