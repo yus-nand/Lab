@@ -38,14 +38,14 @@ public class Player : MonoBehaviour
         transform.Rotate(Vector3.up * mouseX);
         cam.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
     }
-    void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("WorlItem"))
-        {
-            WorldItem item = other.transform.GetComponent<WorldItem>();
-            item.Pickup(inventory);
-            Debug.Log($"Picking up {name}");
-            Destroy(other.gameObject);
-        }
-    }
+    // void OnTriggerEnter(Collider other)
+    // {
+    //     if(other.CompareTag("WorlItem"))
+    //     {
+    //         WorldItem item = other.transform.GetComponent<WorldItem>();
+    //         item.Pickup(inventory);
+    //         Debug.Log($"Picking up {name}");
+    //         Destroy(other.gameObject);
+    //     }
+    // }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class WorldItem : MonoBehaviour
+public class WorldItem : MonoBehaviour  // add this script to any item prefab that can be picked up by player
 {
     public ItemObject itemObject;
     public int quantity = 1;
@@ -25,10 +25,11 @@ public class WorldItem : MonoBehaviour
             Debug.LogError("NO INVENTORY PASSED");
             return;
         }
+        Debug.Log($"storing {name}");
         bool success = inventory.AddItem(itemObject, quantity);
         if(success)
         {
-            Debug.Log($"storing {name}");
+            Debug.Log($"stored {name}");
             Destroy(gameObject);
         }
         else
@@ -40,8 +41,8 @@ public class WorldItem : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Pickup(other.GetComponentInParent<Player>().inventory);
             Debug.Log($"Picking up {name}");
+            Pickup(other.GetComponentInParent<Player>().inventory);
         }
     }
     void Update()
