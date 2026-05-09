@@ -1,49 +1,49 @@
-<mxfile host="Electron" modified="2026-05-01T07:08:59.275Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="7qhHk-SBYAgnQ-C6FimP" version="24.1.0" type="device">
+<mxfile host="Electron" modified="2026-05-06T20:49:56.314Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="TuceHIIFCqivHlhw6z_u" version="24.1.0" type="device">
   <diagram name="Page-1" id="lmBNm8ILlNwPXOYWTATL">
-    <mxGraphModel dx="1202" dy="753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1024" dy="640" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="73hYVN1hU9ZxiktJLewI-1" value="basic components of an inventory system in unity using scriptable objects" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-1" value="basic components of an inventory system in unity using scriptable objects" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=#0050ef;fontColor=#ffffff;strokeColor=#001DBC;" parent="1" vertex="1">
           <mxGeometry x="70" y="20" width="410" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="73hYVN1hU9ZxiktJLewI-2" target="73hYVN1hU9ZxiktJLewI-3">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="73hYVN1hU9ZxiktJLewI-2" target="73hYVN1hU9ZxiktJLewI-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-2" value="ItemClass&lt;br&gt;&lt;br&gt;(abstract, inherits ScriptableObject)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;contains read only info&lt;br&gt;( item id )&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-2" value="ItemClass&lt;br&gt;&lt;br&gt;(abstract, inherits ScriptableObject)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;contains read only info&lt;br&gt;( item id )&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="87" width="190" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="73hYVN1hU9ZxiktJLewI-3" target="73hYVN1hU9ZxiktJLewI-67">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="73hYVN1hU9ZxiktJLewI-3" target="73hYVN1hU9ZxiktJLewI-67" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-3" value="ItemType(s)&lt;div&gt;&lt;br&gt;(generic class, inherits ItemClass)&lt;br&gt;(Weapon, Consumable, Utilitiy&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-3" value="ItemType(s)&lt;div&gt;&lt;br&gt;(generic class, inherits ItemClass)&lt;br&gt;(Weapon, Consumable, Utilitiy&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="135" y="227" width="160" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-67" value="more specific use cases like&lt;br&gt;&lt;br&gt;Consumable (medkit, food) [ inherits Consumable ],&lt;br&gt;Weapon (Sword, Gun) [ inherits Weapon ],&lt;br&gt;Utility (Axe, Shovel) [ inherits Utility ]" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-67" value="more specific use cases like&lt;br&gt;&lt;br&gt;Consumable (medkit, food) [ inherits Consumable ],&lt;br&gt;Weapon (Sword, Gun) [ inherits Weapon ],&lt;br&gt;Utility (Axe, Shovel) [ inherits Utility ]" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="395" y="207" width="235" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-106" value="ItemObject&lt;br&gt;(Scriptable Object)" style="whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-106" value="ItemObject&lt;br&gt;(Scriptable Object)" style="whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" parent="1" vertex="1">
           <mxGeometry x="130" y="560" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-108" value="Inventory&lt;div&gt;&lt;br&gt;&lt;div&gt;AddItem(ItemObject item, int quantity)&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-108" value="Inventory&lt;div&gt;&lt;br&gt;&lt;div&gt;AddItem(ItemObject item, int quantity)&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
           <mxGeometry x="350" y="830" width="210" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-109" value="InventorySlot&lt;div&gt;(Serializable)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;InventorySlot(ItemObject item, int quantity)&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-109" value="InventorySlot&lt;div&gt;(Serializable)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;InventorySlot(ItemObject item, int quantity)&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" parent="1" vertex="1">
           <mxGeometry x="70" y="690" width="240" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-110" value="WorldItem&lt;div&gt;(Pickup and Destroy)&lt;/div&gt;&lt;div&gt;and quantity&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;this script exists on pickable objects, calls Pickup and passes player inventory&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Pickup(inventory)&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-110" value="WorldItem&lt;div&gt;(Pickup and Destroy)&lt;/div&gt;&lt;div&gt;and quantity&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;this script exists on pickable objects, calls Pickup and passes player inventory&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Pickup(inventory)&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
           <mxGeometry x="370" y="520" width="210" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-113" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="73hYVN1hU9ZxiktJLewI-110" target="73hYVN1hU9ZxiktJLewI-106">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-113" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="73hYVN1hU9ZxiktJLewI-106" target="73hYVN1hU9ZxiktJLewI-110" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="300" y="660" as="sourcePoint" />
-            <mxPoint x="420" y="610" as="targetPoint" />
+            <mxPoint x="290" y="640" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-114" value="reference" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="280" y="560" width="70" height="30" as="geometry" />
+        <mxCell id="73hYVN1hU9ZxiktJLewI-114" value="reference" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="270" y="560" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-115" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="73hYVN1hU9ZxiktJLewI-110" target="73hYVN1hU9ZxiktJLewI-108">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-115" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="73hYVN1hU9ZxiktJLewI-110" target="73hYVN1hU9ZxiktJLewI-108" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="340" y="720" as="sourcePoint" />
             <mxPoint x="390" y="670" as="targetPoint" />
@@ -53,34 +53,34 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-116" value="Pickup calls inventory.AddItem()&lt;div&gt;passes item, quantity&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-116" value="Pickup calls inventory.AddItem()&lt;div&gt;passes item, quantity&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="630" y="600" width="190" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-117" value="item, quantity" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-117" value="item, quantity" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="670" y="740" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-118" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="73hYVN1hU9ZxiktJLewI-109" target="73hYVN1hU9ZxiktJLewI-106">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-118" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="73hYVN1hU9ZxiktJLewI-106" target="73hYVN1hU9ZxiktJLewI-109" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="320" y="690" as="sourcePoint" />
-            <mxPoint x="410" y="640" as="targetPoint" />
+            <mxPoint x="240" y="650" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-119" value="reference" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="120" y="650" width="70" height="30" as="geometry" />
+        <mxCell id="73hYVN1hU9ZxiktJLewI-119" value="reference" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="120" y="640" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-120" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="73hYVN1hU9ZxiktJLewI-108" target="73hYVN1hU9ZxiktJLewI-109">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-120" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="73hYVN1hU9ZxiktJLewI-109" target="73hYVN1hU9ZxiktJLewI-108" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="310" y="800" as="sourcePoint" />
-            <mxPoint x="360" y="750" as="targetPoint" />
+            <mxPoint x="340" y="820" as="targetPoint" />
             <Array as="points">
               <mxPoint x="455" y="730" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-121" value="reference" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-121" value="reference" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="380" y="730" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-122" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="73hYVN1hU9ZxiktJLewI-108" target="73hYVN1hU9ZxiktJLewI-109">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-122" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="73hYVN1hU9ZxiktJLewI-108" target="73hYVN1hU9ZxiktJLewI-109" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="280" y="850" as="sourcePoint" />
             <mxPoint x="330" y="800" as="targetPoint" />
@@ -90,16 +90,16 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-123" value="AddItem() makes&amp;nbsp;&lt;div&gt;new InventorySlot(item, quantity)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-123" value="AddItem() makes&amp;nbsp;&lt;div&gt;new InventorySlot(item, quantity)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="310" y="930" width="200" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-125" value="item, quantity" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-125" value="item, quantity" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="100" y="840" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-128" value="My Inventory System using scriptable objects" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6F0000;fillColor=#a20025;fontColor=#ffffff;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-128" value="My Inventory System using scriptable objects" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6F0000;fillColor=#a20025;fontColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="70" y="450" width="260" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-130" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.471;exitY=1.113;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.484;entryY=1.06;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="73hYVN1hU9ZxiktJLewI-125" target="73hYVN1hU9ZxiktJLewI-117">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-130" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.471;exitY=1.113;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.484;entryY=1.06;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="73hYVN1hU9ZxiktJLewI-125" target="73hYVN1hU9ZxiktJLewI-117" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="140" y="960" as="sourcePoint" />
             <mxPoint x="550" y="940" as="targetPoint" />
@@ -111,7 +111,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="73hYVN1hU9ZxiktJLewI-131" value="same" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="73hYVN1hU9ZxiktJLewI-131" value="same" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="400" y="1098" width="50" height="30" as="geometry" />
         </mxCell>
       </root>
