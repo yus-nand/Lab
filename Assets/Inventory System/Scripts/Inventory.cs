@@ -11,7 +11,7 @@ public class Inventory : MonoBehaviour      // add this script to the player or 
 
     private void Awake()
     {
-        for (int i = 0; i < size; i++)
+        for (int i = 0; i < size; i++)          // make 20 slots by default
         {
             slots.Add(new InventorySlot(null, 0));
         }
@@ -68,10 +68,18 @@ public class Inventory : MonoBehaviour      // add this script to the player or 
 
         // logic for non stackable items
 
-        InventorySlot _slot = slots.Find(slots => slots.IsEmpty & slots.item == null);
-        _slot.item = item;
-        _slot.quantity = quantity;
-        OnInventoryChanged?.Invoke();
+        InventorySlot _slot = slots.Find(slots => slots.IsEmpty && slots.item == null);
+        if(_slot != null)
+        {
+            _slot.item = item;
+            _slot.quantity = quantity;
+            OnInventoryChanged?.Invoke();
+        }
+        else
+        {
+            Debug.Log("All Inventory Slots occupied");
+            return false;
+        }
         return true;  
     }
     public void SplitAndAdd(ItemObject item, int quantity)
@@ -109,15 +117,21 @@ public class Inventory : MonoBehaviour      // add this script to the player or 
     {
         foreach(var slot in slots)
         {
-            slots.Clear();
+            slot.item = null;
+            slot.quantity = 0;
         }
         OnInventoryChanged?.Invoke();
     }
     public void Swap(int a, int b)
     {
         var temp = slots[a].item;
+        int tempQuantity = slots[a].quantity;
+
         slots[a].item = slots[b].item;
+        slots[a].quantity = slots[b].quantity;
+
         slots[b].item = temp;
+        slots[b].quantity = tempQuantity;
 
         OnInventoryChanged?.Invoke();
     }

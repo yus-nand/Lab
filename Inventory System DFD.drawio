@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2026-05-06T20:49:56.314Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="TuceHIIFCqivHlhw6z_u" version="24.1.0" type="device">
+<mxfile host="Electron" modified="2026-05-20T09:15:09.486Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="h3o6MooaG9qJ0Vv_lGvc" version="24.1.0" type="device">
   <diagram name="Page-1" id="lmBNm8ILlNwPXOYWTATL">
-    <mxGraphModel dx="1024" dy="640" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="1463" dy="914" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -23,96 +23,248 @@
           <mxGeometry x="395" y="207" width="235" height="140" as="geometry" />
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-106" value="ItemObject&lt;br&gt;(Scriptable Object)" style="whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" parent="1" vertex="1">
-          <mxGeometry x="130" y="560" width="120" height="60" as="geometry" />
+          <mxGeometry x="80" y="570" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-108" value="Inventory&lt;div&gt;&lt;br&gt;&lt;div&gt;AddItem(ItemObject item, int quantity)&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-          <mxGeometry x="350" y="830" width="210" height="60" as="geometry" />
+          <mxGeometry x="300" y="840" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-109" value="InventorySlot&lt;div&gt;(Serializable)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;InventorySlot(ItemObject item, int quantity)&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" parent="1" vertex="1">
-          <mxGeometry x="70" y="690" width="240" height="80" as="geometry" />
+          <mxGeometry x="20" y="700" width="240" height="80" as="geometry" />
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-110" value="WorldItem&lt;div&gt;(Pickup and Destroy)&lt;/div&gt;&lt;div&gt;and quantity&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;this script exists on pickable objects, calls Pickup and passes player inventory&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Pickup(inventory)&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="1" vertex="1">
-          <mxGeometry x="370" y="520" width="210" height="140" as="geometry" />
+          <mxGeometry x="320" y="530" width="210" height="140" as="geometry" />
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-113" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="73hYVN1hU9ZxiktJLewI-106" target="73hYVN1hU9ZxiktJLewI-110" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="300" y="660" as="sourcePoint" />
-            <mxPoint x="290" y="640" as="targetPoint" />
+            <mxPoint x="250" y="670" as="sourcePoint" />
+            <mxPoint x="240" y="650" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-114" value="reference" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="270" y="560" width="70" height="30" as="geometry" />
+          <mxGeometry x="220" y="570" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-115" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="73hYVN1hU9ZxiktJLewI-110" target="73hYVN1hU9ZxiktJLewI-108" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="340" y="720" as="sourcePoint" />
-            <mxPoint x="390" y="670" as="targetPoint" />
+            <mxPoint x="290" y="730" as="sourcePoint" />
+            <mxPoint x="340" y="680" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="680" y="660" />
-              <mxPoint x="680" y="770" />
+              <mxPoint x="630" y="670" />
+              <mxPoint x="630" y="780" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-116" value="Pickup calls inventory.AddItem()&lt;div&gt;passes item, quantity&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="630" y="600" width="190" height="40" as="geometry" />
+          <mxGeometry x="580" y="610" width="190" height="40" as="geometry" />
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-117" value="item, quantity" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="670" y="740" width="90" height="30" as="geometry" />
+          <mxGeometry x="620" y="750" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-118" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="73hYVN1hU9ZxiktJLewI-106" target="73hYVN1hU9ZxiktJLewI-109" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="320" y="690" as="sourcePoint" />
-            <mxPoint x="240" y="650" as="targetPoint" />
+            <mxPoint x="270" y="700" as="sourcePoint" />
+            <mxPoint x="190" y="660" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-119" value="reference" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="120" y="640" width="70" height="30" as="geometry" />
+          <mxGeometry x="70" y="650" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-120" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="73hYVN1hU9ZxiktJLewI-109" target="73hYVN1hU9ZxiktJLewI-108" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="310" y="800" as="sourcePoint" />
-            <mxPoint x="340" y="820" as="targetPoint" />
+            <mxPoint x="260" y="810" as="sourcePoint" />
+            <mxPoint x="290" y="830" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="455" y="730" />
+              <mxPoint x="405" y="740" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-121" value="reference" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="380" y="730" width="70" height="30" as="geometry" />
+          <mxGeometry x="330" y="740" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-122" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="73hYVN1hU9ZxiktJLewI-108" target="73hYVN1hU9ZxiktJLewI-109" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="280" y="850" as="sourcePoint" />
-            <mxPoint x="330" y="800" as="targetPoint" />
+            <mxPoint x="230" y="860" as="sourcePoint" />
+            <mxPoint x="280" y="810" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="330" y="970" />
-              <mxPoint x="160" y="880" />
+              <mxPoint x="280" y="980" />
+              <mxPoint x="110" y="890" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-123" value="AddItem() makes&amp;nbsp;&lt;div&gt;new InventorySlot(item, quantity)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="310" y="930" width="200" height="60" as="geometry" />
+          <mxGeometry x="260" y="940" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-125" value="item, quantity" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="100" y="840" width="90" height="30" as="geometry" />
+          <mxGeometry x="50" y="850" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-128" value="My Inventory System using scriptable objects" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6F0000;fillColor=#a20025;fontColor=#ffffff;" parent="1" vertex="1">
-          <mxGeometry x="70" y="450" width="260" height="30" as="geometry" />
+          <mxGeometry x="20" y="460" width="260" height="30" as="geometry" />
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-130" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.471;exitY=1.113;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.484;entryY=1.06;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="73hYVN1hU9ZxiktJLewI-125" target="73hYVN1hU9ZxiktJLewI-117" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="140" y="960" as="sourcePoint" />
-            <mxPoint x="550" y="940" as="targetPoint" />
+            <mxPoint x="90" y="970" as="sourcePoint" />
+            <mxPoint x="500" y="950" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="170" y="1050" />
-              <mxPoint x="290" y="1130" />
-              <mxPoint x="570" y="1110" />
-              <mxPoint x="720" y="980" />
+              <mxPoint x="120" y="1060" />
+              <mxPoint x="300" y="1060" />
+              <mxPoint x="520" y="1050" />
+              <mxPoint x="670" y="990" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="73hYVN1hU9ZxiktJLewI-131" value="same" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="400" y="1098" width="50" height="30" as="geometry" />
+          <mxGeometry x="350" y="1030" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-1" value="Stacking logic" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6F0000;fillColor=#a20025;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="197" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-2" target="HzgQ_9ke6mTs3peHshJn-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1270.0000000000002" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1420" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-2" value="is item stackable?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="370" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-5" value="yes" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="480" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-11" target="HzgQ_9ke6mTs3peHshJn-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1270.0000000000002" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-11" target="HzgQ_9ke6mTs3peHshJn-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-11" value="if slot found" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="600" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-14" target="HzgQ_9ke6mTs3peHshJn-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-14" value="find a stack (slot) that can accomodate the new quantity" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-17" value="yes" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="710" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-20" target="HzgQ_9ke6mTs3peHshJn-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1270.0000000000002" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-20" target="HzgQ_9ke6mTs3peHshJn-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1420" y="825" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-20" value="if all items can be accomdated into the found stack" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="750" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-23" value="yes" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="910" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-24" target="HzgQ_9ke6mTs3peHshJn-64">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1210" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-24" value="add items in that&amp;nbsp;&lt;div&gt;slot&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-27" value="no" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="795" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-29" value="no" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="620" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-31" value="no" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="388" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-32" target="HzgQ_9ke6mTs3peHshJn-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="935.0000000000002" y="840" as="targetPoint" />
+            <mxPoint x="970" y="730" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1045" y="825" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-32" target="HzgQ_9ke6mTs3peHshJn-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-32" value="Try finding an empty inventory slot" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="575" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-38" value="yes" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="780" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-43" target="HzgQ_9ke6mTs3peHshJn-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1630" y="825" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-43" value="calculate overflow amount and amount to add in the current stack" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="795" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-45" target="HzgQ_9ke6mTs3peHshJn-32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1730" y="1170" />
+              <mxPoint x="950" y="1170" />
+              <mxPoint x="950" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-45" value="&lt;div&gt;add the amount in the current stack which will make it full and&lt;/div&gt;call SplitAndAdd(item, overflow)" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="787.5" width="220" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-48" value="Find an empty slot and add that item to the slot&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;_slot.item = item;&lt;/div&gt;&lt;div&gt;_slot.quantity = quantity;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="370" width="340" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-50" value="no" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="520" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-51" value="Debug.Log(&quot;All slots occupied&quot;);" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="985" y="425" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-57" value="END" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="1120" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-60" target="HzgQ_9ke6mTs3peHshJn-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-60" value="START" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="310" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-64" target="HzgQ_9ke6mTs3peHshJn-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-64" value="OnInventoryChanged?.Invoke();" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1145" y="1050" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-66" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.479;entryY=1.007;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="HzgQ_9ke6mTs3peHshJn-64" target="HzgQ_9ke6mTs3peHshJn-67">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1200" y="950" as="sourcePoint" />
+            <mxPoint x="1470" y="1080" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1390" y="1120" />
+              <mxPoint x="1460" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-67" value="event Action OnInventoryChanged" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="1055" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HzgQ_9ke6mTs3peHshJn-68" value="for UI updatetion" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1420" y="1110" width="110" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

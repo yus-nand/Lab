@@ -37,7 +37,7 @@ public class WorldItem : MonoBehaviour  // add this script to any item prefab th
             Debug.Log($"WorldItem: {name} cant be stored");
         }
     }
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)             // for testing purposes
     {
         if(other.CompareTag("Player"))
         {
